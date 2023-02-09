@@ -1,0 +1,38 @@
+section {
+    width: 180px;
+    height: 180px;
+    border: 10px solid darkcyan;
+    /*포지션 릴레티브는 집을 만들어 가둔다는 의미이다*/
+    /*position: relative;*/
+    /*앱솔루트는 유령화를하고 자기 자신도 유령화를 시킨다*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%),translateY(-50%);
+}
+
+section > div {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+}
+section > div:nth-child(1) {
+    background-color: red;
+    top: 0;
+    left: 0;
+}
+section > div:nth-child(2) {
+    background-color: green;
+    top: 0;
+    right: 0;
+}
+section > div:nth-child(3) {
+    background-color: blue;
+    bottom: 0;
+    left: 0;
+}
+section > div:nth-child(4) {
+    background-color: gold;
+    bottom: 0;
+    right: 0;
+}
